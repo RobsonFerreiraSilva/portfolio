@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #747574, #b1c7d8); /* Gradiente diagonal */
+    color: #090909; /* Texto branco para contraste */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projeto {
+    margin: 1rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Alterado de fixed para relative */
+    bottom: 0;
+    width: 100%;
+}
+
+#sobre {
+    padding: 2rem;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.sobre-conteudo {
+    position: relative; /* Permite posicionar elementos dentro da seção */
+}
+
+.minha-foto {
+    width: 350px; /* Aumenta a largura da imagem */
+    height: 350px; /* Aumenta a altura da imagem */
+    border-radius: 100px; /* Bordas levemente arredondadas para um efeito suave */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+    float: left; /* Posiciona a imagem no canto esquerdo */
+    margin-right: 1rem; /* Espaço entre a imagem e o texto */
+    margin-bottom: 1rem; /* Espaço inferior */
+}
+
+.botoes {
+    margin-top: 1rem;
+    text-align: center; /* Centraliza os botões */
+}
+
+.botao {
+    display: inline-block; /* Permite adicionar margens e espaçamento */
+    padding: 12px 25px; /* Espaçamento interno do botão */
+    margin: 10px; /* Espaçamento entre os botões */
+    background: linear-gradient(135deg, #110915fa, #3a4548); /* Gradiente no fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border: none; /* Remove bordas */
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão */
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+.botao:hover {
+    background: linear-gradient(135deg, #080808, #080808); /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Move o botão ligeiramente para cima */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.botao:active {
+    transform: translateY(2px); /* Move o botão ligeiramente para baixo ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra ao clicar */
+}
+
+.sobre-texto {
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    max-width: 800px; /* Limita a largura do texto para melhor leitura */
+    margin: 0 auto; /* Centraliza o texto */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+#sobre h1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+    color: #333; /* Cor do texto (ajuste conforme necessário) */
+}
